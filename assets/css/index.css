@@ -1,0 +1,222 @@
+.client-app{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "roboto,sans-serif";
+}
+.user{
+    background-color: rgb(242, 249, 248);
+    z-index: -200;
+}   
+.client {
+
+    background-color: rgba(251, 245, 245, 0.847);
+    box-shadow: 5px 2px 9px 10px rgba(98, 155, 115, 0.127);
+}
+.client  main{
+    padding: 0 20px;
+    
+}
+.client  .tieude{
+    padding: 20px 0px;
+    text-align: center;
+}
+.client  .menu-nav{
+    background-color: limegreen;
+    
+    
+}
+.client  .menu-nav li{
+    text-align: center;
+    display: inline-block;
+    margin: 10px 30px;
+    font-size: 20px;
+}
+
+.client  .menu-nav  a{
+    text-decoration: none ;
+    color: white;
+    transition: 0.5s;
+} 
+.client  .menu-nav a:hover{
+    color: rgb(51, 68, 144);
+}
+.client .auth i:hover{
+    color: rgb(51, 68, 144);
+
+}
+.client  .box-main{
+    display: flex;
+    gap: 40px
+    
+}
+
+.client  .banner img{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+}
+/* .client .products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+} */
+.client .news-product{
+    border-radius: 10px;
+    border: 1px solid rgba(230, 223, 223, 0.714);
+    text-align: center;
+}
+.client .news-product h3{
+   margin: 20px 0px;
+   padding: -20px 0px;
+}
+.client .news-product p{
+    color: red;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.client .news-product img{
+    width: 100%;
+}
+.client .banner-product{
+
+}
+.client  .left-main{
+    
+}
+.client .Taikhoan {
+    border: 1px solid rgba(197, 189, 189, 0.799);
+    border-radius: 3px; 
+}
+.client .Taikhoan p{
+    background-color: rgba(77, 205, 77, 0.937);
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 0;
+
+}
+
+.client .box{
+  padding: 10px;  
+}
+.client .box form label{
+    font-size: 18px;
+}
+.client .box form input[type="text"],.box form input[type="password"]{
+    width: 100%;
+    margin: 10px 0;
+    padding: 7px;
+    border: none;
+    outline: none;
+}
+.client  input:focus{
+   background-color: rgb(192, 225, 196);
+    transition: 1s;
+}
+
+.client .box button{
+    padding: 13px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(14, 106, 27);
+    color: aliceblue;
+    transition: 0.5s;
+}
+.client .box button:hover{
+    background-color: rgb(201, 234, 205);
+    color: green;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.client .box li{
+    margin-top: 10px;
+}
+.client .box a{
+    text-decoration: none;
+    font-size: 18px;
+    color: red;
+}
+.client .box a:hover{
+    text-decoration: underline;
+}
+.client .Danhmuc {
+    /* margin-top: 30px; */
+    border: 1px solid rgb(187, 175, 175);
+    border-radius: 3px; 
+}
+.client .Danhmuc p{
+    background-color: limegreen;
+    color: white;
+    padding: 10px;
+    font-size: 24px;
+    margin: 0;
+    
+}
+.client .Danhmuc li {
+    padding: 10px;
+   text-align: center;
+   list-style-type: none;
+   font-size: 18px;
+    border-top: 1px solid rgb(167, 136, 131);
+}
+.client .Danhmuc li a{
+   text-decoration: none;
+}
+.client .Danhmuc li:hover{
+    background-color: rgb(98, 185, 100);
+    transition: 1s;
+}
+
+.client .Yeuthich{
+    border: 1px solid rgb(201, 196, 196);
+    border-radius: 3px;
+    margin-top: 20px;
+}
+.client .Yeuthich p{
+    background-color: limegreen;
+    color: white;
+    padding: 10px;
+    font-size: 24px;
+    margin: 0;
+
+    text-align: center;
+}
+.client .boxyeuthich .new-items:hover{
+    background-color: rgb(98, 185, 100);
+    transition: 1s;
+}
+.client .boxyeuthich .new-items{
+    border-top:  1px solid rgb(172, 166, 166);
+}
+.client .new-items img{
+    width: 15%;
+    margin-right: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.client .new-items {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.client .new-items a{
+    text-decoration: none;
+}
+.client  footer{
+    background-color: rgb(79, 174, 79);
+    padding: 30px 0px;
+    margin-top: 30px;
+}
+.client  .footer{
+    
+    color: white;
+    
+    text-align: center;
+    
+}
+/* admin */
+
+
