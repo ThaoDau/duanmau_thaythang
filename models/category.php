@@ -19,7 +19,7 @@
         return $loaihang;
     }
     function update_danhmuc($tenloai,$maloai){
-        $sql = "update loai_hang set ten_loai='".$tenloai."' where ma_loai=".$maloai;
+        $sql = "update loai set ten_loai='".$tenloai."' where ma_loai=".$maloai;
         pdo_execute($sql);
     }
  ?>

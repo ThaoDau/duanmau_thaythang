@@ -8,26 +8,29 @@
 				    </div>
 				    
 			    </div><!--//row-->
-			   
-                <form>
+                <?php
+if(is_array($list_danhmuc)){
+    extract($list_danhmuc);
+}
+?>
+                <form action="index.php?act=updateloaihang" method="post">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Mã loại</label>
-                    <input type="text" class="form-control"   value="<?php if (isset($value['ma_loai']) && ($value['ma_loai'] != '')) echo $value['ma_loai']?>">
+                    <input type="text" class="form-control"   value="<?php if(isset($ma_loai)&&($ma_loai!="")) echo $ma_loai?>" disabled>
                     <small id="emailHelp" class="form-text text-muted">....</small>
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Tên loại</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value="<?php if (isset($value['ten_loai']) && ($value['ten_loai'] != '')) echo $value['ten_loai']?>">
+                    <input type="text" class="form-control" name="ten_loai" value="<?php if(isset($ten_loai)&&($ten_loai!="")) echo $ten_loai?>">
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
-                <input type="hidden" name="id_danh_muc" value="<?php if (isset($value['ma_loai']) && ($value['ma_loai'] != '')) echo $value['id_danh_muc']?>" >
-                <button type="submit" class="btn btn-primary text-light">Submit</button>
-                <button type="submit" class="btn btn-primary text-light">Danh sách</button>
+                <input type="hidden"  name="ma_loai" value="<?php if(isset($ma_loai)&&($ma_loai!="")) echo $ma_loai?>" >
+                <input type="submit" class="btn btn-primary text-light" name="update_loai" value="Submit"/>
+                <input type="submit" class="btn btn-primary text-light" value="Danh sách">
                 </form>
-			 
+                
 				
 				
 			    
 		    </div><!--//container-fluid-->
 	    </div><!--//app-content-->
-      

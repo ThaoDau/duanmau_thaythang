@@ -1,5 +1,6 @@
 <?php
     include '../models/category.php';
+    include '../models/comment.php';
     include '../models/connect.php';
     include "./component/header.php";
 if(isset($_GET['act'])){
@@ -32,18 +33,21 @@ if(isset($_GET['act'])){
         case 'sualoaihang':
             if(isset($_GET['id']) && ($_GET['id']>0)){
                 $id = $_GET['id'];
+                
                 $list_danhmuc = list_one($id);
             }
             include "../admin/view/categories/updateCategory.php";
             break;
         case 'updateloaihang':
-            if (isset($_POST['edit_loaikhoahoc'])&&($_POST['edit_loaikhoahoc'])){
-                $ten_loai = $_POST['ten_loai'];
-                $ma_loai = $_POST['ma_loai'];
-                update_danhmuc($ten_loai,$ma_loai);
-                $thongbao =  'Đã cập nhật danh mục';
+            if (isset($_POST['update_loai'])&&($_POST['update_loai'])){
+                $tenloai = $_POST['ten_loai'];
+                $maloai = $_POST['ma_loai'];
+               
+                update_danhmuc($tenloai,$maloai);
 
+                $thongbao =  'Đã cập nhật danh mục';
             }
+            
             $listall_danhmuc=list_danhmuc();
             include "../admin/view/categories/categories.php";
             break;
@@ -73,9 +77,19 @@ if(isset($_GET['act'])){
         case 'updateuser':
                 include "../admin/view/users/updateUser.php";
                 break;
-        case 'listcomments':
-                include "../admin/view/comments/comments.php";
-                break;
+    // binh_luan: 
+        case 'listbinhluan':
+            $listall_binhluan = list_binhluan();
+            
+            include '../admin/view/comments/comments.php';
+            break;
+        case 'xoabinhluan': 
+            if(isset($_GET['id']) && ($_GET['id']>0)){
+                delete_binhluan($_GET['id']);
+            }
+            $listall_binhluan = list_binhluan();
+            include '../admin/view/comments/comments.php';
+            break;
         default:
             include "home.php";
     }
