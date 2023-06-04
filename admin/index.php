@@ -88,6 +88,7 @@ if(isset($_GET['act'])){
                 delete_binhluan($_GET['id']);
             }
             $listall_binhluan = list_binhluan();
+            
             include '../admin/view/comments/comments.php';
             break;
         default:

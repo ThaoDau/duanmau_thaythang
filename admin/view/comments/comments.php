@@ -1,3 +1,4 @@
+
 <div class="app-content pt-3 p-md-3 p-lg-4">
 		    <div class="container-xl">
 			    
@@ -34,7 +35,7 @@
 					    </div><!--//table-utilities-->
 				    </div><!--//col-auto-->
 			    </div><!--//row-->
-			   
+			   	
 			    
 			    <nav id="orders-table-tab" class="orders-table-tab app-nav-tabs nav shadow-sm flex-column flex-sm-row mb-4">
 				    <a class="flex-sm-fill text-sm-center nav-link active" id="orders-all-tab" data-bs-toggle="tab" href="#orders-all" role="tab" aria-controls="orders-all" aria-selected="true">All</a>
@@ -63,11 +64,11 @@
 											?>
 										<tbody>
 											<tr>
-												<td class="cell">#<?php $value['ma_bl']?></td>
-												<td class="cell"><?php $value['ma_hh']?></td>
-												<td class="cell"><?php $value['ma_kh']?></td>
-												<td class="cell"><span class="truncate"><?php $value['noi_dung']?></span></td>
-												<td class="cell"><span></span><span class="note"><?php $value['ngay_bl']?></span></td>
+												<td class="cell">#<?php echo $value['ma_bl']?></td>
+												<td class="cell"><?php echo $value['ma_hh']?></td>
+												<td class="cell"><?php echo $value['ma_kh']?></td>
+												<td class="cell"><span class="truncate"><?php echo $value['noi_dung']?></span></td>
+												<td class="cell"><?php echo $value['ngay_bl']?></td>
 
 												
 												
